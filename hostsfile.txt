@@ -1,8 +1,2 @@
-host1
-host2
-host3
-many
-hosts
-listed
-per
-line
+localhost
+10.252.136.167
