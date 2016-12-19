@@ -14,11 +14,10 @@ with open('hostsfile.txt')as f:
     my_hosts = f.read().splitlines()
 
 
-''' Task to get the disk utilization on those hosts,
+''' Task to get the disk utilization on any host,
 per user and collect them into a computable object
 and utilize the object later for sorting and other
-use cases. Apply the hosts decorator to execute on
-the hosts.'''
+use cases.''' 
 
 def space_per_user():
     result = run('''find /tmp/local -type f -printf '%u %k\n' | awk '{ \ 
@@ -32,6 +31,9 @@ def space_per_user():
     result = result.splitlines()
     return result
       
+''' Applying the task decorator and performing the space_per_user
+ method on the list of hosts from the text file. The output is given
+as a dict and to be sorted later for computational purpose'''
 
 @task
 def check_space_on_machines():
