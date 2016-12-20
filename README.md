@@ -1,9 +1,9 @@
 # Simple utility to see the top disk users
 
 ## Prerequisites
-Python3
-pip3
-fabric3
+* Python3
+* pip3
+* fabric3
 
 ## Install Fabric
 ```pip3 install -r requiremetns.txt```
