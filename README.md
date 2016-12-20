@@ -1,4 +1,4 @@
-# Simple utility to see the top disk users
+# Simple utility to see the top disk users at a given path on collectively multiple host
 
 ## Prerequisites
 * Python3
