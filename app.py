@@ -20,7 +20,7 @@ and utilize the object later for sorting and other
 use cases.''' 
 
 def space_per_user():
-    result = run('''find /tmp/local -type f -printf '%u %k\n' | awk '{ \ 
+    result = run('''find /local -type f -printf '%u %k\n' | awk '{ \ 
                                         arr[$1] += $2 \ 
                                     } END { \ 
                                         for ( i in arr ) { \ 
